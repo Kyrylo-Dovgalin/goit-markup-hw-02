@@ -21,15 +21,17 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* Список навигации */
-.nav-list{
+/* Оформление списков навигации и контактов */
+
+.nav-list, .contacts {
     list-style: none;
 }
 
 /* лого первая часть */
-.logo, .logo:hover, .logo:focus {
+.logo /* ,.logo:hover,.logo:focus  */
+{
     color: var(--logo-color);
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -38,9 +40,8 @@ body {
 }
 
 /* Лого вторая часть */
-.logo-part,
-.logo-part:focus,
-.logo-part:hover {
+.logo-part /* ,.logo-part:focus,.logo-part:hover */
+ {
     --logo-color:#000000;
     color:var(--logo-color);
 }
@@ -55,23 +56,16 @@ body {
 }
 
 /* Подсветка текущей страницы и наведения */
-.current,
-.nav-link:hover,
-.nav-link:focus {
+.current, .nav-link:hover, .nav-link:focus {
     color: var(--focus-color);
 }
 
 
-/* Оформление списка контактов */
-.contacts {
-    list-style: none;
-}
 
-/* офрмление контактов */
+/* оформление контактов */
 .contacts-item {
     color: var(--text-color);
     font-weight: 500;
-    /* font-size: 14px; */
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -83,12 +77,14 @@ body {
 
 /* Стилизация основы */
 
+/* Секция герой */
 .hero{
 
 }
 
+/* Оформления заголовка */
 .hero-title {
-    background-color: #757575;
+    background-color: #757575; /*временное значение*/
     --title-color:#ffffff;
     color:var(--title-color);
     font-weight: 900;
@@ -100,21 +96,25 @@ body {
     text-transform: uppercase; 
 }
 
+/* кнопка герой */
 .hero-button {
     --button-text-color:#ffffff;
     color: var(--button-text-color);
     background-color: #2196F3;
-    font-weight: 700;
+    font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.8;
     /* identical to box height, or 188% */
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
+/* Секция преимущества */
 .benefits {
 
 }
 
+/* Оформление заголовка преимуществ */
 .title {
     color: var(--title-color);
     font-size: 36px;
@@ -122,11 +122,12 @@ body {
     text-align: center;
 }
 
+/* оформление списка преимуществ */
 .benefits .list {
     list-style: none;
 }
 
-
+/* оформление преимущества */
 .list-item {
     color: var(--title-color);
     font-style: normal;
@@ -135,22 +136,27 @@ body {
     text-transform: uppercase;
 }
 
+/* секция услуги */
 .services {
 
 }
 
+/* оформление списка услуг */
 .services .list {
     list-style: none;
 }
 
+/* секция команда */
 .team {
 
 }
 
+/* оформление списка команды */
 .team .list {
     list-style: none;
 }
 
+/* офрормление сотрудника */
 .team-member {
     color: var(--title-color);
     font-weight: 500;
@@ -160,6 +166,7 @@ body {
     text-align: center;
 }
 
+/* оформление должности */
 .position {
     color: var(--text-color);
     font-size: 16px;
@@ -167,6 +174,64 @@ body {
     /* identical to box height */
     text-align: center;
 }
+
+/* оформление списка фильтра */
+.filter {
+    list-style: none;
+}
+
+/* оформление кнопок фильтра */
+.filter-button {
+    color: var(--button-text-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    /* identical to box height, or 162% */
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+
+.filter-button:hover, .filter-button:focus {
+    --text-color:#ffffff;
+    color: var(--text-color);
+    background-color: var(--focus-color);
+    
+}
+
+/* оформление списка проектов */
+.projects-list {
+    list-style: none;
+}
+
+/* оформление карточки проекта */
+.projects-link {
+    text-decoration: none;
+}
+
+/* офрмление названия проекта */
+.projects-name {
+    color: var(--title-color);
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+}
+
+/* оформление типа проекта */
+.projects-type {
+    color:var(--text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+}
+
+/* оформление сотостояния карточки проекта */
+ .projects-name:active,.projects-name:hover,.projects-name:focus,
+ .projects-type:active, .projects-type:hover, .projects-type:focus {
+     color: var(--focus-color);
+ }
 
 /* footer style */
 
