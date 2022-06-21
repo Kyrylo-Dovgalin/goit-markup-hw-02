@@ -247,6 +247,7 @@ body {
 .physical-address {
     --text-color:#ffffff;
     color: var(--text-color);
+    font-style: normal;
     
 }
 
